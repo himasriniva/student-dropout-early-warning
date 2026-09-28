@@ -1,0 +1,92 @@
+Loaded 4424 students, 40 columns. Dropout rate = 32.1%
+
+=== Stage: enrollment (24 features) ===
+  Logistic Regression      ROC-AUC 0.8270 ± 0.0157   PR-AUC 0.7420
+  Decision Tree            ROC-AUC 0.7777 ± 0.0159   PR-AUC 0.6650
+  Random Forest            ROC-AUC 0.8237 ± 0.0072   PR-AUC 0.7377
+  Hist Gradient Boosting   ROC-AUC 0.8154 ± 0.0114   PR-AUC 0.7394
+  SVM (RBF)                ROC-AUC 0.8217 ± 0.0132   PR-AUC 0.7312
+  -> selected: Logistic Regression  | test ROC-AUC 0.8173, recall 0.806, precision 0.520
+
+=== Stage: semester_1 (32 features) ===
+  Logistic Regression      ROC-AUC 0.9048 ± 0.0117   PR-AUC 0.8588
+  Decision Tree            ROC-AUC 0.8701 ± 0.0160   PR-AUC 0.8101
+  Random Forest            ROC-AUC 0.9041 ± 0.0102   PR-AUC 0.8561
+  Hist Gradient Boosting   ROC-AUC 0.9049 ± 0.0135   PR-AUC 0.8601
+  SVM (RBF)                ROC-AUC 0.9014 ± 0.0134   PR-AUC 0.8497
+  -> selected: Hist Gradient Boosting  | test ROC-AUC 0.8973, recall 0.806, precision 0.707
+
+=== Stage: semester_2 (40 features) ===
+  Logistic Regression      ROC-AUC 0.9244 ± 0.0127   PR-AUC 0.8852
+  Decision Tree            ROC-AUC 0.8914 ± 0.0131   PR-AUC 0.8187
+  Random Forest            ROC-AUC 0.9215 ± 0.0102   PR-AUC 0.8796
+  Hist Gradient Boosting   ROC-AUC 0.9224 ± 0.0110   PR-AUC 0.8858
+  SVM (RBF)                ROC-AUC 0.9209 ± 0.0121   PR-AUC 0.8781
+  -> selected: Logistic Regression  | test ROC-AUC 0.9140, recall 0.799, precision 0.785
+
+3-class report:
+              precision    recall  f1-score   support
+
+     Dropout     0.8000    0.7324    0.7647       284
+    Enrolled     0.4624    0.5409    0.4986       159
+    Graduate     0.8428    0.8371    0.8400       442
+
+    accuracy                         0.7503       885
+   macro avg     0.7017    0.7035    0.7011       885
+weighted avg     0.7607    0.7503    0.7545       885
+
+{
+  "dataset": {
+    "source": "UCI ML Repository id 697",
+    "n_students": 4424,
+    "dropout_rate": 0.3212,
+    "n_train": 3539,
+    "n_test": 885
+  },
+  "target_recall": 0.8,
+  "stages": {
+    "enrollment": {
+      "model": "Logistic Regression",
+      "n_features": 24,
+      "threshold": 0.3823,
+      "roc_auc": 0.8173,
+      "pr_auc": 0.7322,
+      "accuracy": 0.6994,
+      "balanced_accuracy": 0.7276,
+      "precision": 0.5205,
+      "recall": 0.8063,
+      "f1": 0.6326,
+      "flagged_pct": 0.4972
+    },
+    "semester_1": {
+      "model": "Hist Gradient Boosting",
+      "n_features": 32,
+      "threshold": 0.3816,
+      "roc_auc": 0.8973,
+      "pr_auc": 0.8558,
+      "accuracy": 0.8305,
+      "balanced_accuracy": 0.8241,
+      "precision": 0.7068,
+      "recall": 0.8063,
+      "f1": 0.7533,
+      "flagged_pct": 0.3661
+    },
+    "semester_2": {
+      "model": "Logistic Regression",
+      "n_features": 40,
+      "threshold": 0.5487,
+      "roc_auc": 0.914,
+      "pr_auc": 0.8802,
+      "accuracy": 0.8655,
+      "balanced_accuracy": 0.8481,
+      "precision": 0.7855,
+      "recall": 0.7993,
+      "f1": 0.7923,
+      "flagged_pct": 0.3266
+    }
+  },
+  "three_class_accuracy": 0.7503,
+  "three_class_macro_f1": 0.7011
+}
+
+Artifacts written to results/ and models/

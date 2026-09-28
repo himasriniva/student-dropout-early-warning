@@ -1,0 +1,25 @@
+feature,importance_mean,importance_std
+Tuition fees up to date,0.0723,0.00993
+Course,0.03095,0.00696
+Scholarship holder,0.02934,0.00595
+Application mode,0.02187,0.0064
+Gender,0.01828,0.00413
+Mother's occupation,0.01515,0.00274
+Father's occupation,0.00668,0.00423
+Mother's qualification,0.00628,0.00284
+Admission grade,0.00527,0.00302
+Age at enrollment,0.00513,0.00157
+Debtor,0.00492,0.0032
+Unemployment rate,0.00467,0.00241
+Marital status,0.00252,0.00114
+Previous qualification,0.00143,0.00099
+Daytime/evening attendance,0.00142,0.00159
+Father's qualification,0.00128,0.00126
+Application order,0.00123,0.00072
+Previous qualification (grade),0.00096,0.00108
+Educational special needs,0.00015,0.00062
+Displaced,0.0001,0.00089
+Inflation rate,2e-05,3e-05
+GDP,-3e-05,8e-05
+Nacionality,-0.00026,0.00062
+International,-0.00206,0.00197

@@ -1,0 +1,16 @@
+stage,model,cv_roc_auc,cv_average_precision,cv_f1,cv_balanced_accuracy,cv_roc_auc_std
+enrollment,Logistic Regression,0.827,0.742,0.6522,0.7443,0.0157
+enrollment,Decision Tree,0.7777,0.665,0.6046,0.7051,0.0159
+enrollment,Random Forest,0.8237,0.7377,0.6342,0.7314,0.0072
+enrollment,Hist Gradient Boosting,0.8154,0.7394,0.6465,0.7396,0.0114
+enrollment,SVM (RBF),0.8217,0.7312,0.6316,0.7296,0.0132
+semester_1,Logistic Regression,0.9048,0.8588,0.7699,0.8337,0.0117
+semester_1,Decision Tree,0.8701,0.8101,0.7416,0.8126,0.016
+semester_1,Random Forest,0.9041,0.8561,0.766,0.8239,0.0102
+semester_1,Hist Gradient Boosting,0.9049,0.8601,0.7721,0.8311,0.0135
+semester_1,SVM (RBF),0.9014,0.8497,0.7569,0.8157,0.0134
+semester_2,Logistic Regression,0.9244,0.8852,0.7974,0.8543,0.0127
+semester_2,Decision Tree,0.8914,0.8187,0.7545,0.8226,0.0131
+semester_2,Random Forest,0.9215,0.8796,0.7914,0.8415,0.0102
+semester_2,Hist Gradient Boosting,0.9224,0.8858,0.8015,0.8525,0.011
+semester_2,SVM (RBF),0.9209,0.8781,0.7907,0.8416,0.0121

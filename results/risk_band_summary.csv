@@ -1,0 +1,4 @@
+risk_band,Dropout,Enrolled,Graduate,n,actual_dropout_rate
+High,204,29,14,247,0.826
+Medium,35,48,33,116,0.302
+Low,45,82,395,522,0.086
